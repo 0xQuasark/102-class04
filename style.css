@@ -3,7 +3,7 @@ img {
 }
 
 #stage {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   text-align: center;
   display: flex;
   /* overflow: auto; */
@@ -24,7 +24,7 @@ img {
 
 
 #audience {
-  background-color: blueviolet;
+  /* background-color: blueviolet; */
   text-align: center;
   margin: 1px 70px
 }
@@ -45,14 +45,14 @@ h1 {
   font-family: 'Courier New', Courier, monospace
 }
 
-main {
+/* main {
   background-color: red;
-}
+} */
 
-header {
+/* header {
   background-color: blue;
-}
-
+} */
+/* 
 footer {
   background-color: purple;
-}
+} */
