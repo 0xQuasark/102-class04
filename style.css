@@ -1,5 +1,5 @@
 img {
-  width: 100px
+  width: 300px
 }
 
 #stage {
@@ -8,6 +8,10 @@ img {
   display: flex;
   /* overflow: auto; */
 
+}
+
+.caption {
+  text-align: center;
 }
 
 

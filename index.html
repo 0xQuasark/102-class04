@@ -14,46 +14,25 @@
 
   <main id="myMain">
     <div>
-      <script>
-        let likesDogs = confirm("Do you like Dogs?")
-        if (likesDogs) {
-          document.write("Likes Dogs: ✅<p>") 
-        } else {
-          document.write("Likes Dogs! ❌<p>") 
-        }
-        const defaultAnswer = "I don't have one";
-        let name = prompt("What's your favorite dogs name?", defaultAnswer);
-
-        if (name === defaultAnswer) {
-          document.write("You don't like dogs, shame on you!");
-        } else {
-          document.write("You like dogs and " + name.toUpperCase() + " is a good boy");
-        }
-        
-        let chosenColor = "red";
-        let color = prompt("What color would you like to change the background to?", chosenColor)
-
-        let mainElement = document.getElementById("myMain")
-        mainElement.style.backgroundColor = color
-
-
-      </script>
+      <script src="app.js"> </script>
     </div>
     <div id="stage">
       <div class="box">
-        <img alt="steak dinner" src="https://cdn.discordapp.com/attachments/1105373859621904494/1123388993057337445/0xquasark_dog_cooking_a_steak_for_hungry_cats_fb04aabc-3df8-4a2a-8ca2-76fd3bd59384.png">
-        <div class="caption">
-          Dogs like making steaks for cats
-        </div>
+        <script>
+          if (isCool()) {
+            document.write('<button onclick="cycleImages()">Change Image</button>');
+            document.write('<img id="displayImage" src="steak_dinner.png" alt="Displayed Image">');
+            document.write('<p id="caption" class="caption">Dogs can cook steak for kittens</p>')
+
+            forCoolFolks();
+          } else {
+            document.write('<img src="silly_cat.png" alt="cats are inferior!"><br>');
+            document.write('Cats are inferior</p>')
+          }
+        </script>
       </div>
-      <div class="box">
-        <img alt="rescuing cats" src="https://cdn.midjourney.com/f712da9c-b098-4392-ab85-5fd117ca99a3/0_1.png">
-        <div class="caption">
-          Dogs rescue kittens from drowning!
-        </div>
-      </div>
-      
     </div>
+
     <div id="audience">
       😹😼😺😸😿🐈‍⬛😺😽🙀🐈🐈‍⬛😺😾😹😸😼🐱😻😺😸😽😿🙀😺😹😼🐈‍⬛😻😾😺😼😺
     </div>
