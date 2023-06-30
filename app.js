@@ -33,7 +33,25 @@ function cycleImages() {
   }
 }
 
+function insertCats() {
+  const catEmojis = ['🐱', '😺', '😸', '😹', '😻', '😼', '😽', '🙀', '😿', '😾'];
+  let output = '';
+  let n = 0
 
+  while (n === 0) {
+    n = prompt('Enter the number of cat emojis:');
+  }
+
+  for (let i = 0; i < n; i++) {
+    const randomIndex = Math.floor(Math.random() * catEmojis.length);
+    const randomCat = catEmojis[randomIndex];
+    output += randomCat;
+  }
+
+  document.write(output)
+  console.log(output)
+
+}
 
 function uncoolFolksGoHere() {
   document.write("I'm sorry, this page cannot be as cool as it could be, because you prefer the wrong species...<p>");
